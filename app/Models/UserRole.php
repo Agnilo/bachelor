@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class UserRole extends Model
 {
-    use HasFactory;
+    public function  users(){
+        return $this->belongsToMany('App\User');
+    }
 }

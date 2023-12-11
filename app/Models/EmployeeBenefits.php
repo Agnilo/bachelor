@@ -7,5 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class EmployeeBenefits extends Model
 {
-    use HasFactory;
+    public function benefits()
+    {
+        return $this->hasMany('App\Employee');
+    }
 }
