@@ -60,9 +60,8 @@ sp;
  <ul class="nav">
  <a class="brand" href="#"><span class="glyphicon glyphicon-user"
 style="color:blue;"></span></a>
- <li class="active"><a href="#"><?php echo "Hi, Mr.".$adminname;
-?></a></li>
- <li><a href="#">Employee Code :<?php echo $employeecode; ?></a></li>
+ <li class="active"><a href="#"></a></li>
+ <li><a href="#">Employee Code :</a></li>
  <a class="brand" href="dashboard.php"><span class="glyphicon
 glyphicon-home" style="color:green;"></span></a>
  <li><a href="#"><span class="glyphicon glyphicon-off"
