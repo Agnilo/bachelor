@@ -16,17 +16,17 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #b1bbab;
         }
         header {
-            background-color: #333;
+            background-color: #545f44;
             color: #fff;
             padding: 10px;
             text-align: center;
         }
         nav {
             background-color: #444;
-            color: #fff;
+            color: white;
             padding: 10px;
             text-align: center;
         }
