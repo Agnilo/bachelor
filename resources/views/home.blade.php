@@ -25,7 +25,7 @@
             text-align: center;
         }
         nav {
-            background-color: #444;
+            background-color: #739366;
             color: white;
             padding: 10px;
             text-align: center;
@@ -34,6 +34,7 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
+            color: #fff;
         }
         nav ul li {
             display: inline;
@@ -43,7 +44,7 @@
             padding: 20px;
         }
         footer {
-            background-color: #333;
+            background-color: #545f44;
             color: #fff;
             padding: 10px;
             text-align: center;
