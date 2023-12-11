@@ -18,7 +18,7 @@
     <body class="antialiased">
 
             <div>
-                Sveiki
+                Sveiki!
             </div>
     </body>
 </html>
