@@ -32,7 +32,7 @@
 
     <main>
         <h2>Turinys</h2>
-        <p>This is the main content area of the page.</p>
+        <p>This is the main content area of the page..</p>
         <p>You can add more sections, content, and customize it as needed.</p>
     </main>
 
