@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', [HomeController::class, 'index']); // Nukreipimas į HomeController index() metodą pagrindiniame puslapyje
+// Route::get('/', 'HomeController@index')->name('home');
 //Route::get('/', function () {
  //   return view('welcome');
 //});
