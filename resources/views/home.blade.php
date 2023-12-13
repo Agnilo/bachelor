@@ -117,24 +117,7 @@
                 @endforeach
             @endif
         </div>
-        <div class="col-1"></div>
-        <div class="col-9">
-            <div class="row">
-                @foreach ($products as $product)
-                    <div class="col-3">
-                        <div class="card w-100 h-100 card-st mb-3">
-                            <img class="card-img-top card-img-bottom" src="{{$product['image']}}"
-                                 style="min-height: 200px; max-height: 200px" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title" style="font-weight: bold">{{$product['name']}}</h5>
-                                <p class="card-text">Kaina: {{$product['price']}} Eur.</p>
-                                <a href="#" style="color: #262626">Pirkti</a>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-        </div>
+        
     </div>
 </div>
 <br>
