@@ -91,6 +91,69 @@
         </div>
     @endif
 
+    <div class="container">
+    <br>
+    <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+            <h2><a href="{{ url('/home') }}" style="color: #262626">PREKĖS</a></h2>
+        </div>
+        <div class="col-md-auto">
+            <h2><a href="{{url('/delivery')}}" style="color: #262626">PRISTATYMAS</a></h2>
+        </div>
+        <div class="col-md-auto">
+            <h2><a href="{{url('/about')}}" style="color: #262626">APIE MUS</a></h2>
+        </div>
+    </div>
+    <br>
+    <div class="row justify-content-md-center" style="background-color: lightgrey">
+        <br>
+    </div>
+    <div class="row pt-5">
+        <div class="col-2 card">
+            @if($user = Auth::user())
+                <h3>Gamintojai</h3>
+                @foreach ($brands as $brand)
+                    <a href="{{ url('/brand/') }}/{{$brand->id}}" style="color: #262626">{{$brand->name}}</a>
+                @endforeach
+            @endif
+        </div>
+        <div class="col-1"></div>
+        <div class="col-9">
+            <div class="row">
+                @foreach ($products as $product)
+                    <div class="col-3">
+                        <div class="card w-100 h-100 card-st mb-3">
+                            <img class="card-img-top card-img-bottom" src="{{$product['image']}}"
+                                 style="min-height: 200px; max-height: 200px" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-weight: bold">{{$product['name']}}</h5>
+                                <p class="card-text">Kaina: {{$product['price']}} Eur.</p>
+                                <a href="#" style="color: #262626">Pirkti</a>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<footer style="background-color: lightgrey">
+    <div class="container">
+        <br>
+        <br>
+        <h3>Informacija</h3><br>
+        <p>Petro g. 3, LT-12345 Vilnius<br>
+            Telefonas: (8 5) 123 4567<br>
+            El. paštas: info@catshop.com<br>
+            Kodas: 123456789<br>
+            PVM kodas: LT1123456789</p>
+        <br>
+        <br>
+    </div>
+</footer>
+
     <!-- <header>
         <h1>Sveiki atvykę į HarmonyWorks!</h1>
     </header>
