@@ -91,7 +91,7 @@
         </div>
     @endif
 
-    <header>
+    <!-- <header>
         <h1>Sveiki atvykę į HarmonyWorks!</h1>
     </header>
 
@@ -112,7 +112,7 @@
 
     <footer>
         <p>&copy; <?php echo date("Y"); ?> HarmonyWork</p>
-    </footer>
+    </footer> -->
 
     </body>
 </html>
