@@ -54,7 +54,42 @@
         }
 </style>
 </head>
-    <body class="antialiased">
+    <body>
+
+    @if (Route::has('login'))
+        <div class="top-right links">
+            @auth
+                <li class="nav-item dropdown links">
+                    <a id="navbarDropdown" class="dropdown-toggle" href="#" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        {{ Auth::user()->name }}
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ route('logout') }}"
+                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                        </a>
+                        @can('manage-users')
+                            <a class="dropdown-item" href="{{route('admin.users.index')}}">
+                                User Management
+                            </a>
+                        @endcan
+                        <form id="logout-form" action="{{route('logout')}}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                    </div>
+                </li>
+            @else
+                <a href="{{ url('/login') }}">Login</a>
+
+                @if (Route::has('register'))
+                    <a href="{{ route('register') }}">Register</a>
+                @endif
+            @endauth
+        </div>
+    @endif
 
     <header>
         <h1>Sveiki atvykę į HarmonyWorks!</h1>
