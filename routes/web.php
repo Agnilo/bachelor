@@ -14,8 +14,6 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']); // Nukreipimas į HomeController index() metodą pagrindiniame puslapyje
-// Route::get('/', 'HomeController@index')->name('home');
-//Route::get('/', function () {
- //   return view('welcome');
-//});
+// Route::get('/', [HomeController::class, 'index']); // Nukreipimas į HomeController index() metodą pagrindiniame puslapyje
+Route::get('/', 'HomeController@index')->name('home');
+
