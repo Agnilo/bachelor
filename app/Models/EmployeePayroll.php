@@ -9,6 +9,6 @@ class EmployeePayroll extends Model
 {
     public function user()
     {
-        return $this->hasOne('App\Employee');
+        return $this->hasOne(Employee::class);
     }
 }

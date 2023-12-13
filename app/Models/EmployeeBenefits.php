@@ -9,6 +9,6 @@ class EmployeeBenefits extends Model
 {
     public function benefits()
     {
-        return $this->hasMany('App\Employee');
+        return $this->hasMany(Employee::class);
     }
 }
