@@ -1,7 +1,8 @@
 <?php
 
-namespace database\seeders; 
-
+namespace Database\Seeders;
+  
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
@@ -14,7 +15,7 @@ class UserTableSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
         User::truncate();
         DB::table('role_user')->truncate();
